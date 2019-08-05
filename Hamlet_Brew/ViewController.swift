@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
         
-        addSubviews(forScreenCapture: true)
+        addSubviews(forScreenCapture: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,7 +70,7 @@ fileprivate extension ViewController {
     }
 }
 
-// MARK: special UI to queue / cue button interactions
+// MARK: special UI to queue / cue button interactions for screen recording
 
 extension ViewController {
     enum Cue: String, CaseIterable {
