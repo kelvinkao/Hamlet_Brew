@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A15873D22F3483500ACB01F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15873C22F3483500ACB01F /* AppDelegate.swift */; };
+		3A15873F22F3483500ACB01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15873E22F3483500ACB01F /* ViewController.swift */; };
+		3A15874222F3483500ACB01F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A15874022F3483500ACB01F /* Main.storyboard */; };
+		3A15874422F3483900ACB01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A15874322F3483900ACB01F /* Assets.xcassets */; };
+		3A15874722F3483900ACB01F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A15874522F3483900ACB01F /* LaunchScreen.storyboard */; };
+		3A15875222F3483900ACB01F /* Hamlet_BrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15875122F3483900ACB01F /* Hamlet_BrewTests.swift */; };
+		3A15875D22F3487C00ACB01F /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15875C22F3487C00ACB01F /* GameLogic.swift */; };
+		3A15879B22F417DE00ACB01F /* BrewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15879A22F417DE00ACB01F /* BrewScreen.swift */; };
+		3A15879D22F422E400ACB01F /* BrewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15879C22F422E400ACB01F /* BrewMenu.swift */; };
+		3A15879F22F57AB100ACB01F /* BrewKeyPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15879E22F57AB000ACB01F /* BrewKeyPad.swift */; };
+		3A1587A222F57C2200ACB01F /* BrewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1587A122F57C2200ACB01F /* BrewDevice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A15874E22F3483900ACB01F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A15873122F3483500ACB01F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A15873822F3483500ACB01F;
+			remoteInfo = Hamlet_Brew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A15873922F3483500ACB01F /* Hamlet_Brew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamlet_Brew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A15873C22F3483500ACB01F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A15873E22F3483500ACB01F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A15874122F3483500ACB01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A15874322F3483900ACB01F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A15874622F3483900ACB01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A15874822F3483900ACB01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A15874D22F3483900ACB01F /* Hamlet_BrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hamlet_BrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A15875122F3483900ACB01F /* Hamlet_BrewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hamlet_BrewTests.swift; sourceTree = "<group>"; };
+		3A15875322F3483900ACB01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A15875C22F3487C00ACB01F /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		3A15876522F3492F00ACB01F /* Hamlet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Hamlet.c; sourceTree = "<group>"; };
+		3A15879A22F417DE00ACB01F /* BrewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewScreen.swift; sourceTree = "<group>"; };
+		3A15879C22F422E400ACB01F /* BrewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMenu.swift; sourceTree = "<group>"; };
+		3A15879E22F57AB000ACB01F /* BrewKeyPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewKeyPad.swift; sourceTree = "<group>"; };
+		3A1587A122F57C2200ACB01F /* BrewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A15873622F3483500ACB01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A15874A22F3483900ACB01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A15873022F3483500ACB01F = {
+			isa = PBXGroup;
+			children = (
+				3A15873B22F3483500ACB01F /* Hamlet_Brew */,
+				3A15875022F3483900ACB01F /* Hamlet_BrewTests */,
+				3A15873A22F3483500ACB01F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A15873A22F3483500ACB01F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A15873922F3483500ACB01F /* Hamlet_Brew.app */,
+				3A15874D22F3483900ACB01F /* Hamlet_BrewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A15873B22F3483500ACB01F /* Hamlet_Brew */ = {
+			isa = PBXGroup;
+			children = (
+				3A15873C22F3483500ACB01F /* AppDelegate.swift */,
+				3A15873E22F3483500ACB01F /* ViewController.swift */,
+				3A15874022F3483500ACB01F /* Main.storyboard */,
+				3A15874322F3483900ACB01F /* Assets.xcassets */,
+				3A15874522F3483900ACB01F /* LaunchScreen.storyboard */,
+				3A15876522F3492F00ACB01F /* Hamlet.c */,
+				3A15874822F3483900ACB01F /* Info.plist */,
+				3A15875C22F3487C00ACB01F /* GameLogic.swift */,
+				3A1587A022F57BCA00ACB01F /* Brew */,
+			);
+			path = Hamlet_Brew;
+			sourceTree = "<group>";
+		};
+		3A15875022F3483900ACB01F /* Hamlet_BrewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A15875122F3483900ACB01F /* Hamlet_BrewTests.swift */,
+				3A15875322F3483900ACB01F /* Info.plist */,
+			);
+			path = Hamlet_BrewTests;
+			sourceTree = "<group>";
+		};
+		3A1587A022F57BCA00ACB01F /* Brew */ = {
+			isa = PBXGroup;
+			children = (
+				3A15879A22F417DE00ACB01F /* BrewScreen.swift */,
+				3A15879C22F422E400ACB01F /* BrewMenu.swift */,
+				3A15879E22F57AB000ACB01F /* BrewKeyPad.swift */,
+				3A1587A122F57C2200ACB01F /* BrewDevice.swift */,
+			);
+			path = Brew;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A15873822F3483500ACB01F /* Hamlet_Brew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A15875622F3483900ACB01F /* Build configuration list for PBXNativeTarget "Hamlet_Brew" */;
+			buildPhases = (
+				3A15873522F3483500ACB01F /* Sources */,
+				3A15873622F3483500ACB01F /* Frameworks */,
+				3A15873722F3483500ACB01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hamlet_Brew;
+			productName = Hamlet_Brew;
+			productReference = 3A15873922F3483500ACB01F /* Hamlet_Brew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A15874C22F3483900ACB01F /* Hamlet_BrewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A15875922F3483900ACB01F /* Build configuration list for PBXNativeTarget "Hamlet_BrewTests" */;
+			buildPhases = (
+				3A15874922F3483900ACB01F /* Sources */,
+				3A15874A22F3483900ACB01F /* Frameworks */,
+				3A15874B22F3483900ACB01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A15874F22F3483900ACB01F /* PBXTargetDependency */,
+			);
+			name = Hamlet_BrewTests;
+			productName = Hamlet_BrewTests;
+			productReference = 3A15874D22F3483900ACB01F /* Hamlet_BrewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A15873122F3483500ACB01F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kelvin Kao";
+				TargetAttributes = {
+					3A15873822F3483500ACB01F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					3A15874C22F3483900ACB01F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3A15873822F3483500ACB01F;
+					};
+				};
+			};
+			buildConfigurationList = 3A15873422F3483500ACB01F /* Build configuration list for PBXProject "Hamlet_Brew" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A15873022F3483500ACB01F;
+			productRefGroup = 3A15873A22F3483500ACB01F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A15873822F3483500ACB01F /* Hamlet_Brew */,
+				3A15874C22F3483900ACB01F /* Hamlet_BrewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A15873722F3483500ACB01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A15874722F3483900ACB01F /* LaunchScreen.storyboard in Resources */,
+				3A15874422F3483900ACB01F /* Assets.xcassets in Resources */,
+				3A15874222F3483500ACB01F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A15874B22F3483900ACB01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A15873522F3483500ACB01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A15875D22F3487C00ACB01F /* GameLogic.swift in Sources */,
+				3A15873F22F3483500ACB01F /* ViewController.swift in Sources */,
+				3A15879D22F422E400ACB01F /* BrewMenu.swift in Sources */,
+				3A15873D22F3483500ACB01F /* AppDelegate.swift in Sources */,
+				3A15879B22F417DE00ACB01F /* BrewScreen.swift in Sources */,
+				3A1587A222F57C2200ACB01F /* BrewDevice.swift in Sources */,
+				3A15879F22F57AB100ACB01F /* BrewKeyPad.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A15874922F3483900ACB01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A15875222F3483900ACB01F /* Hamlet_BrewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A15874F22F3483900ACB01F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A15873822F3483500ACB01F /* Hamlet_Brew */;
+			targetProxy = 3A15874E22F3483900ACB01F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A15874022F3483500ACB01F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A15874122F3483500ACB01F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A15874522F3483900ACB01F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A15874622F3483900ACB01F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A15875422F3483900ACB01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A15875522F3483900ACB01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A15875722F3483900ACB01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HMH7AJ578;
+				INFOPLIST_FILE = Hamlet_Brew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelvinkaodev.Hamlet-Brew";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A15875822F3483900ACB01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HMH7AJ578;
+				INFOPLIST_FILE = Hamlet_Brew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelvinkaodev.Hamlet-Brew";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A15875A22F3483900ACB01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hamlet_BrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelvinkaodev.Hamlet-BrewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hamlet_Brew.app/Hamlet_Brew";
+			};
+			name = Debug;
+		};
+		3A15875B22F3483900ACB01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hamlet_BrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelvinkaodev.Hamlet-BrewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hamlet_Brew.app/Hamlet_Brew";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A15873422F3483500ACB01F /* Build configuration list for PBXProject "Hamlet_Brew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A15875422F3483900ACB01F /* Debug */,
+				3A15875522F3483900ACB01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A15875622F3483900ACB01F /* Build configuration list for PBXNativeTarget "Hamlet_Brew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A15875722F3483900ACB01F /* Debug */,
+				3A15875822F3483900ACB01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A15875922F3483900ACB01F /* Build configuration list for PBXNativeTarget "Hamlet_BrewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A15875A22F3483900ACB01F /* Debug */,
+				3A15875B22F3483900ACB01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A15873122F3483500ACB01F /* Project object */;
+}
